@@ -1,0 +1,11 @@
+version=1.4
+seed=72
+nbVar=3
+nbReal=5000000
+variable0=beta;16;105;0.02
+variable1=eta;9;2E3;30
+variable2=t;20;2120
+expression=(beta/eta)*(((t-0.1)/eta)**(beta-1))*exp(-((t-0.1)/eta)**(beta))
+outputFile=./UserData/453c727c/results
+symmetrical=false
+correlation=false

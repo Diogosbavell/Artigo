@@ -1,0 +1,61 @@
+\documentclass{ws-m3as}
+\usepackage[super]{cite}
+\usepackage{url}
+\begin{document}
+
+\title{Using World Scientific's Bib\TeX\ style file}
+
+\markboth{WSPC}{Using World Scientific's Bib\TeX\ style file}
+
+\maketitle
+
+\section{Usage}
+
+\begin{verbatim}
+\documentclass{ws-m3as}
+\usepackage[super]{cite}
+\usepackage{url}
+\begin{document}
+\section{Output}
+Sample output using ws-m3as bibliography style file ...
+text\cite{best,pier,jame} ...
+\bibliographystyle{ws-m3as}
+\bibliography{sample}
+\end{document}
+\end{verbatim}
+
+\section{Output}
+Sample output using ws-m3as bibliography style file
+
+\begin{enumerate}
+\item article: see \cite{best,pier,jame}
+
+\item proceedings: see \cite{Weiss94}
+
+\item inproceedings: see \cite{conftypical,Moss94}
+
+\item book: see\cite{ArmsRace1}
+
+\item edition: see \cite{ComplexVariables}
+
+\item editor: see \cite{ColBenh:93}
+
+\item series: see \cite{inbook}
+
+\item tech report: see \cite{hobby1992,CSTR116}
+
+\item unpublished: see \cite{VoQS}
+
+\item phd thesis: see \cite{Brown:1988:IEL}
+
+\item masters thesis: see \cite{segms}
+
+\item incollection: see \cite{Jones:Phoneme}
+
+\item booklet: see Ref.~\citen{URW:kerning}
+\end{enumerate}
+
+\bibliography{sample}
+\bibliographystyle{ws-m3as}
+
+\end{document} 

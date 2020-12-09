@@ -1,0 +1,10 @@
+version=1.4
+seed=87
+nbVar=2
+nbReal=1000000
+variable0=P0;7;0;1
+variable1=Pbase;7;0;1
+expression=(Pbase-P0)/Pbase
+outputFile=./UserData/b80f3a5e/results
+symmetrical=false
+correlation=false

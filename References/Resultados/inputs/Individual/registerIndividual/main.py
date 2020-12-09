@@ -1,0 +1,15 @@
+import os
+input=open(os.path.expanduser(os.getenv('USERPROFILE'))+"\\desktop\\MC\\results.txt",'r')
+inputresultado=open("resultados.txt",'a')
+inputs=input.readlines()
+media=inputs[6].strip()
+desvpad=inputs[7].strip()
+k95=inputs[14].strip()
+iteracao=open(os.path.expanduser(os.getenv('USERPROFILE'))+"\\desktop\\MC\\iteracao.txt")
+iteracaos=iteracao.readlines()
+tempo=iteracaos[len(iteracaos)-2]
+inputresultado.write("{};{};{};{}\n".format(tempo.strip(),media[10:len(media)],desvpad[10:len(desvpad)],k95[34:len(k95)]))
+iteracao.close()
+input.close()
+inputresultado.close()
+os.remove(os.path.expanduser(os.getenv('USERPROFILE'))+"\\desktop\\MC\\results.txt")

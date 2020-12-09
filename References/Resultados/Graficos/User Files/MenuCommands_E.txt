@@ -1,0 +1,14 @@
+[Ver]
+29
+[WksPlotMenuMRUList]
+Version = 1
+1 = 33261|Box Chart
+2 = 33248|Scatter
+3 = 33249|Line
+4 = 33284|Ternary
+5 = 33255|Column
+6 = 0|worksheet -P 240 "C:\Program Files\OriginLab\Origin9\gl3DVector.otp"
+7 = 0|worksheet -P ? "C:\Program Files\OriginLab\Origin9\glBar3d.otp"
+8 = 0|worksheet -P ? "C:\Program Files\OriginLab\Origin9\glWalls.otp"
+9 = 0|worksheet -P 186 "C:\Program Files\OriginLab\Origin9\PolarXrYTheta.otp"
+10 = 0|worksheet -P 242 "C:\Program Files\OriginLab\Origin9\gl3Dbars.otp"
