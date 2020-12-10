@@ -27,7 +27,7 @@
 \begin{document}
 	
 \markboth{Borges, Diogo S.; 
-	Costa-Félix, R.P.B. and Lava, Deise D.}{A Methology Proposal for Aging Analisys in Electronic Ciruits}
+	Costa-Félix, R.P.B. and Lava, Deise D.}{A Methodology Proposal for Aging Analysis in Systems Based on Uncertainty Propagation and Principal Component Analysis}
 
 %%%%%%%%%%%%%%%%%%% Publisher's Area please ignore %%%%%%%%%%%%%%%%%%%%%%%
 %
@@ -35,7 +35,7 @@
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\title{\textbf{A Methodology Proposal for Aging Analysis in Electronical Circuits Based on Uncertainty Propagation}}
+\title{\textbf{A Methodology Proposal for Aging Analysis in Systems Based on Uncertainty Propagation and Principal Component Analysis}}
 
 \author{Diogo da Silva Borges\footnote{Instituto Nacional de Metrologia, Qualidade e Tecnologia (INMETRO) - Av. Nossa Sra. das Graças, 50 - Xerém, Duque de Caxias - RJ, 25250-020, Brazil}}
 
@@ -70,7 +70,7 @@ deise\_dy@hotmail.com}
 \end{history}
 
 \begin{abstract}
-The analysis of systems aging has a fundamental role in quality assurance and the reliability of processes and operations. Thus, the adoption of methodologies capable of predicting the availability of systems susceptible to aging is essential. The present paper aims to present a method capable of predicting a system's behavior based on its degradation caused by aging. For this, predictive and statistical analysis techniques should be used, such as Faul Tree and Fussel Vesely Techniques, Principal Component Analysis, and the Monte Carlo Method. As a result of the proposal, the paper presents results capable of detailing the behavior of a system, adopted as an example application case, as well as the contribution of its components to its unavailability, according to Weibull's Probability Density Function. The proposed methodology and the analysis consider the uncertainties associated with the variables of interest, which is a determining factor in quantifying the probability of systems failure. The proposed methodology is relevant for aging studies, disclosing a straightforward way for research and applications in installations that require high reliability of equipment and systems.	
+The analysis of systems aging has a fundamental role in quality assurance and the reliability of processes and operations. Thus, the adoption of methodologies capable of predicting the availability of systems susceptible to aging is essential. The present paper aims to present a method capable of predicting a system's behavior based on its degradation caused by aging. For this, predictive and statistical analysis techniques should be used, such as Faul Tree and Fussel Vesely Techniques, Principal Component Analysis and the Monte Carlo Method. As a result of the proposal, the paper presents results capable of detailing the behavior of a system, adopted as an example application case, as well as the contribution of its components to its unavailability, according to Weibull's Probability Density Function. The proposed methodology and the analysis consider the uncertainties associated with the variables of interest, which is a determining factor in quantifying the probability of systems failure. Its relevance is directed towards aging studies, disclosing a straightforward way for research and applications in installations that require high reliability of equipment and systems.	
 	
 \end{abstract}
 
@@ -80,13 +80,13 @@ The analysis of systems aging has a fundamental role in quality assurance and th
 
 \section{Introduction}	
 
-The need to assess the reliability of systems over time of operation is intrinsic to quality assurance and control. The concern in determining the characteristics of a system susceptible to aging demonstrates aspects inherent to the safety of its operation and maintenance concerning its precision and trueness. Besides, efficient management of aging allows the determination of maintenance routines virtually, directly impacting costs, reliability, and availability.  Based on this, it is essential to point out that aging is an agent capable of degrading a system's components. It can cause deterioration in component insulation, damage by fatigue in mechanical parts, and erosion in metal structures \cite{WenyuanLi2006}. 
+The need to assess the reliability of systems over time of operation is intrinsic to quality assurance and control. The concern in determining the characteristics of a system susceptible to aging demonstrates aspects inherent to the safety of its operation and maintenance concerning its precision and trueness. Besides, efficient management of aging allows the determination of maintenance routines virtually, directly impacting costs, reliability and availability.  Based on this, it is essential to point out that aging is an agent capable of degrading a system's components. It can cause deterioration in component insulation, damage by fatigue in mechanical parts and erosion in metal structures \cite{WenyuanLi2006}. 
 
-The qualitative and quantitative aspects of the stages that make up the life cycle of systems and components are described employing a hazard function, whose outcome is consolidated in a distribution pattern known in the literature as the bathtub mode \cite{Klutke2003} (Fig.\ref{fig:1}).
+The qualitative and quantitative aspects of the stages that make up the life cycle of systems and components are described employing a hazard function, whose outcome is consolidated in a distribution pattern known in the literature as the bathtub model \cite{Klutke2003} (Fig.\ref{fig:1}).
 \begin{figure} [H]
 	\centering
 	\includegraphics[width=0.7\linewidth]{Figures/BathCurve2}
-	\caption{Bathtube Based $\beta$ (Elaborated by the author)}
+	\caption{Bathtub Based $\beta$ (Elaborated by the author)}
 	\label{fig:1}
 \end{figure}
 
@@ -94,31 +94,31 @@ The region of most significant impact for a system concerning the risk of unavai
 
 Issues related to the analysis of system failures refer to the concern with what is defined as a risk. ``Risk is usually defined as the combination of the probability of occurrence of harm and the severity of that harm" \cite{Matsuoka2012}.
 
-The failures associated with the effects of aging point to dangers arising from the use of systems over time, which have a close relationship with potential damage.  In this sense, the threat is a potential source of unwanted consequences, such as loss of accuracy (e.g., loss of precision and trueness \cite {VIM2012}), unexpected operational deviations, and loss of function, for example.
+The failures associated with the effects of aging point to dangers arising from the use of systems over time, which have a close relationship with potential damage.  In this sense, the threat is a potential source of unwanted consequences, such as loss of accuracy (e.g., loss of precision and trueness \cite {VIM2012}), unexpected operational deviations and loss of function, for example.
 
 Based on what has been exposed, the present paper aims to carry out a methodological approach capable of being used in the failure analysis of systems. To this, it is proposed to use known techniques for failure analysis and the development of predictive models. In order to fulfill this objective, a methodological approach shall be carried out considering the use of the Fault Tree (FT) technique, pre-processing, Principal Component Analysis (PCA), use of statistical indicators and considerations related to the uncertainties arising from the determination of the failure rate, which shall be processed using the Monte Carlo method (MC). As an application example, an electronic circuit developed for amplifying low voltage signals will be considered.
 
 
 \section{Theoretical Background}
 
-The methodology for the analysis of aging is formulated based on methods, concepts, and techniques known for assessing uncertainty and failures, such as Weibull distribution, FT technique, PCA, MC method and propagating uncertainty techniques. Thus, the realization of a theoretical approach is essential for understanding and using these devices in the composition of aging methodology, presented in the following subsections.
+The methodology for the analysis of aging is formulated based on methods, concepts and techniques known for assessing uncertainty and failures, such as Weibull distribution, FT technique, PCA, MC method and propagating uncertainty techniques. Thus, the realization of a theoretical approach is essential for understanding and using these devices in the composition of aging methodology, presented in the following subsections.
 
 
 \subsection{Considerations for Using the Fault Tree Technique}
 
 The FT technique makes it possible to characterize the failure probability of a system or equipment by considering the probabilistic analysis of the individual components present (events) associated with independent failures. The technique's working mechanisms consist of propagating probabilities through mathematical relationships between components (gates) \cite{Borges2015}.
 
-The mathematical modeling of the failure of a system using the FT technique is done through Boolean logic. Additionally, there is a need for in-depth and detailed knowledge of the object of study. In this way, an FT carries an intrinsic knowledge of the functioning of a system  considered in failure analysis.
+The mathematical modeling of the failure of a system, using the FT technique, is done through Boolean logic. Additionally, there is a need for in-depth and detailed knowledge of the object of study. In this way, an FT carries an intrinsic knowledge of the functioning of a system  considered in failure analysis.
 
 The propagation of faults in an FT is carried out mathematically through the relationship between the events, conveniently treated employing literal modeling. This approach makes it possible to use essential simplifications for the model's processing, mainly by considering the concept of minimal cutsets.
 
-The fault tree processing must rely on the concept of minimal cutsets, which represents the maximum simplification that can be performed in the FT methodology. Such simplification can be achieved through numerical sets, such as union, intersection, and the distributive law.
+The fault tree processing must rely on the concept of minimal cutsets, which represents the maximum simplification that can be performed in the FT methodology. Such simplification can be achieved through simplifications used in Boolean Algebra.
 
 \subsection{Weibull Distribution}
 
 The Weibull distribution has excellent applicability in relation to the study of component life \cite{Lai2006}. The distribution can describe failures in three periods of importance: Infant Mortality, Random Failures and Wear Failures. These regions are characterized by periods of exponential decrease in failure rates, constant failure rates and exponential increase in failure rates, respectively.
 
-The Probability Density Function (PDF) for Weibull Distribution can be used to determine the probability of failure of each component of a system for the three periods described above. It is worth mentioning that this parameter should be input to the methodology of analysis of systems aging. Eq.\ref{eq:3.5} gives Weibull's \cite{Rinne2008}.
+The Probability Density Function (PDF) for Weibull Distribution can be used to determine the probability of failure of each component of a system for the three periods described above. It is worth mentioning that this parameter should be input to the methodology of analysis of systems aging. Eq.\ref{eq:3.5} gives Weibull's PDF \cite{Rinne2008}.
 
 \begin{equation}\label{eq:3.5}
 f(t)=\frac{\beta}{\eta}\left(\frac{t-\gamma}{\eta}\right)^{\beta-1}\exp-\left(\frac{t-\gamma}{\eta}\right)^{\beta}; \hspace{2pt} for \hspace{2pt} \beta > 0\hspace{2pt},\hspace{2pt} \eta > 0 \hspace{2pt} and \hspace{2pt} t \geq \gamma.
@@ -135,13 +135,13 @@ There is the possibility to analyze the failure of a system for a given period o
 
 \subsection{Monte Carlo Method and Uncertainty Propagation}
 
-MC method presents itself as a mathematical-statistical tool commonly used in the exact sciences to perform simulations \cite{Yoriyaz2009}  with a more exciting bias for highly complex approaches.
+MC method presents itself as a mathematical-statistical tool commonly used in the exact sciences to perform simulations \cite{Yoriyaz2009} with a more exciting bias for highly complex approaches.
 
 The propagation of uncertainties must be made by considering the deviations from the failure rates of each component. Such considerations should be made for all sources of uncertainty associated with determining an exact failure rate value \cite{VIM2012}. Thus, the following steps must be followed for the correct realization of propagation of uncertainties:
 
 \begin{romanlist}[(ii)]
 	
-\item \textbf{Determination of uncertainty sources:} The sources of uncertainty are characterized as mechanisms responsible for the variation in the realization  of a measurand. Thus, numerous factors can be responsible for these changes, such as environmental conditions, calibration, and resolution of equipment, systematic error and adjustments, for example.
+\item \textbf{Determination of uncertainty sources:} The sources of uncertainty are characterized as mechanisms responsible for the variation in the realization  of a measurand. Thus, numerous factors can be responsible for these changes, such as environmental conditions, calibration resolution of equipment, systematic error and adjustments, for example.
 
 \item \textbf{Determination of the uncertainty types:} The associated uncertainties can come from two characteristic sources of determining uncertainties \cite{VIM2012}: 
 
@@ -151,19 +151,21 @@ The propagation of uncertainties must be made by considering the deviations from
 \item \textbf{Type B uncertainly:} All uncertainties that are characterized by any method other than statistical analysis. 
 \end{itemlist}
 
-\item \textbf{Calculation of standard uncertainty:} For an input quantity $X_{i}$  determined by $n$ repeated and independent observations $X_{i}$,$k$, the standard uncertainty $u(x_{i})$ of its estimate $x_{i}=\overline{X}_{i}$ is $u(x_{i})=S(\overline{X}_{i})$, with $S^{2}(\overline{X}_{i})$ is calculated according to \cite{GUN2008}:
+\item \textbf{Calculation of standard uncertainty:} For an input quantity $X_{i}$  determined by $n$ repeated and independent observations $X_{i}$, $k$, the standard uncertainty $u(x_{i})$ of its estimate $x_{i}=\overline{X}_{i}$ is $u(x_{i})=S(\overline{X}_{i})$, with $S^{2}(\overline{X}_{i})$ is calculated according to \cite{GUN2008}:
+
 \begin{equation}
 S^{2}(\overline{q})=\frac{1}{n^{2}-n}\sum_{j=1}^{n} (q_{j}-\frac{1}{n}\sum\limits_{k=1}^{n}q_{k})^{2}
 \end{equation}
 
 Where:
+
 \begin{itemlist}
 	\item $S^{2}(\overline{q})$ is the experimental variance of the mean; 
 	\item $n$ indicates the number of observations; and
-	\item $q$ represents the random variable (definition of a random variable in \cite{GUN2008}).
+	\item $q$ represents the random variable (definition of a random variable in \cite{GUN2008}).\\
 \end{itemlist}
 
-Regarding Type B uncertainties, quantification is obtained through from \cite{GUN2008}: Data previous measurements, experience with or general knowledge of the behavior and properties of relevant materials and instruments, manufacturer specifications, data provided in calibration certificates, and manuals. Thus, the determination of the standard uncertainty associated with Type B must take into account the type of distribution related to determining deviations in values, such that:
+Regarding Type B uncertainties, quantification is obtained through from \cite{GUN2008}: Data previous measurements, experience with or general knowledge of the behavior and properties of relevant materials and instruments, manufacturer specifications, data provided in calibration certificates and manuals. Thus, the determination of the standard uncertainty associated with Type B must take into account the type of distribution related to determining deviations in values, such that:
 
 \begin{equation} \label{eq:4.3}
 u(x_{i})= \frac{u_ i \left(amostral \right)} {S_i \left( theory \right)}
@@ -180,12 +182,12 @@ Where:
 	\label{table:1}
 	\begin{center}
 		\resizebox{125mm}{!}{
-			{\begin{tabular}{@{}ccp{8cm}@{}}\toprule
-					Distribution & $S_i \left( theory \right)$ & Uncertainly Description \\
-					\colrule
-					Rectangular\hphantom{0} &\hphantom{0}$S_i=\frac{b-a}{\sqrt{3}}$ &\hphantom{}Only the maximum and minimum variation values are known (e.g., $a$ and $b$).\\
-					Triangular \hphantom{0} & \hphantom{0}$S_i=\sqrt{6}$ &\hphantom{}Maximun and minimun values are know (e.g.,$\pm a$) and the most likely value.\\
-					Normal or t-student$^{b}$ \hphantom{0} &\hphantom{0}$S_i=\delta^{c}$ & \hphantom{}Uncertainty from calibrations and standards.\\ 
+			{\begin{tabular}{@{}ccp{8cm}@{}}\toprule\\
+					Distribution & $S_i \left( theory \right)$ & Uncertainly Description \\\\
+					\colrule\\
+					Rectangular\hphantom{0} &\hphantom{0}$S_i=\frac{b-a}{\sqrt{3}}$ &\hphantom{}Only the maximum and minimum variation values are known (e.g., $a$ and $b$).\\\\
+					Triangular \hphantom{0} & \hphantom{0}$S_i=\sqrt{6}$ &\hphantom{}Maximun and minimun values are know (e.g.,$\pm a$) and the most likely value.\\\\
+					Normal or t-student$^{b}$ \hphantom{0} &\hphantom{0}$S_i=\delta^{c}$ & \hphantom{}Uncertainty from calibrations and standards.\\\\
 					\botrule
 		\end{tabular}}}
 	\end{center}
@@ -202,7 +204,7 @@ Where:
 \subsection{Interpretation and Data Visualization Techniques}
 Techniques for analyzing and interpreting the data can be used for aging analysis. Through them. it becomes possible to identify the behavior of the system and its components considering aging. PCA and Fussel-Vesely techniques can be used for this purpose. 
 
-The integration between the techniques allows the creation of an "additive model", o qual pode ser utilizado para a construção de a predictive model. A large number of data may be necessary to determine a more accurate model. However, it is more practical than performing calculations associated with component failures through the MC method.
+The integration between the techniques allows the creation of an "additive model", which can be used to build the predictive model. A large number of data may be necessary to determine a more accurate model. However, it is more practical than performing calculations associated with component failures through the MC method.
 
 \subsection{Fussel-Vesely Technique} 
 
@@ -215,8 +217,8 @@ FV=\frac{P(base)-P(x_{i}=0)}{P(base)}
 Where:
 
 \begin{itemlist}
-	\item $P(base)$ refers to the probability of the top event (system unavailability) for the base case, which is computed using the actual failure probabilities of all components in the system; and
-	\item $P(x_{i}=0)$ is the probability when component is assumed to work without fail, e.g., when $P(x_{i}=0)=0$.
+	\item $P(base)$ refers to the probability of the top event (system unavailability) for the base case, which is computed using the actual failure probabilities of all components in the system. The variable in question refers to the calculation of the FT without any change being made to the values of probabilities of failure and associated uncertaintie; and
+	\item $P(x_{i}=0)$ is the probability when component is assumed to work without fail. In this case, the probability of failure and associated uncertainty of the component is assumed to be zero, e.g., $P(x_{i}=0)=0$ and $U=0$.
 \end{itemlist}
 
 The FV technique generates a parameter of relevance to the aging methodology, which is essential in the participation of Probabilistic Failure Analyzes (PSA). Through the defense-in-depth requirement, the study of failures relates to traceability with system components' behavior \cite{vanderBorst2001}, which makes the FV technique an essential participation tool in your analysis.
@@ -227,7 +229,7 @@ PCA presents itself as a tool for analyzing multivariate statistical data. It is
 
 \begin{figure}[H]
 	\centering 
-	\includegraphics[width=0.7\linewidth]{Figures/PCAExample2}
+	\includegraphics[width=0.9\linewidth]{Figures/PCAExample2}
 	\caption{PCA Dimension Reduction Example (Based on \protect\cite{Adcock2015}).}
 	\label{fig:5}
 \end{figure}
@@ -244,9 +246,8 @@ The techniques presented throughout this paper should be combined to result in t
 	\item \textbf{Mathematical Processing:} The MC method shall be used to analyze system unavailability over time. The technique allows calculations of the probability of failure of the component based on the propagation of uncertainties. In this way, it becomes possible to consider the uncertainties in all the calculation phases.
 	\item \textbf{Components study:} The analysis of the components concerning aging is done using the FV technique. Also, the PCA should be used to perform a more perceptual analysis regarding the system's behavior about its components and aging.
 \end{romanlist}
-
-
-To create a strategy for applying the aging analysis methodology, Fig.\ref{fig:6} presents a flow chart of the methodology's application. The flowchart contains the sequential steps required to perform an aging analysis from the proposed methodology's perspective
+ 
+To create a strategy for applying the aging analysis methodology, Fig.\ref{fig:6} presents a flow chart of the methodology's application. The flowchart contains the sequential steps required to perform an aging analysis from the proposed methodology's perspective.
 
 \begin{figure} [H] 
 	\centering 
@@ -255,7 +256,7 @@ To create a strategy for applying the aging analysis methodology, Fig.\ref{fig:6
 	\label{fig:6}
 \end{figure}
 
-It is worthwhile mentioning that in Fig.\ref{fig:6}, $\lambda$ represents the probability of component failure; $U_{std}$, the standardized uncertainty and $P(x)$ the failure probability. The quantification of these variables must be done using the Weibull PDF.
+It is worthwhile mentioning that in Fig.\ref{fig:6}, $\lambda$ represents the probability of component failure; $U_{std}$, the standardized uncertainty and $P(x)$ the failure probability. The quantification of these variables must be done using the Weibull's PDF.
 
 \subsection{Aging Analysis Methodology Application}
 
@@ -312,18 +313,20 @@ To exemplify the application of the methodology, the Tab.\ref{table:2} concentra
 		\resizebox{125mm}{!}{
 			{\begin{tabular}{@{}ccccccccc@{}}\toprule
 					\\
-					Component & Failure Mode& $\eta \hspace{2pt}(H)$&$\beta<1^{b}$& $\beta=1^{b}$&$\beta>1^{b}$&$\gamma$\hspace{2pt}($H$)\\\\
-					\colrule
-					\\\\
-					\multicolumn {1}{l}{Resistor}& \multicolumn {1}{l}{Accuracy Loss}&$M=1540; U_{std}=34^{a}$&$M=0.3;U_{std}=0.05$&$M=1; U_{std}=0.02$&$M=170; U_{std}=0.05$&0.1\\\\
-					\multicolumn {1}{l}{Variable Resistor}&\multicolumn {1}{l}{Position Failure}&$M=1535; U_{std}=25^{a}$&$M=0.3;U_{std}=0.05$&$M=1;U_{std}=0.02$&$M=150; U_{std}=0.02$&0.1\\\\
-					\multicolumn {1}{l}{Integrated Circuit}&\multicolumn {1}{l}{Operation Failure}&$^{c}$&$M=0.3;U_{std}=0.05$&$M=1;U_{std}=0.02$&$M=175;U_{std}=0.04$&0.1\\\\
-					\botrule\\
+					Component & Failure Mode& $\eta \hspace{2pt}(H)$&$\beta<1^{c}$& $\beta=1^{c}$&$\beta>1^{c}$&$\gamma$\hspace{2pt}$(H)^{e}$\\\\
+					\colrule\\
+					\multicolumn {1}{l}{Resistor}& \multicolumn {1}{l}{Accuracy Loss}&$M=1540^{a}$&$M=0.3;U_{std}=0.05$&$M=1; U_{std}=0.02$&$M=170; U_{std}=0.05$&0.1\\\\
+					\multicolumn {1}{l}{Variable Resistor}&\multicolumn {1}{l}{Position Failure}&$M=1535; U_{std}=25^{b}$&$M=0.3;U_{std}=0.05$&$M=1;U_{std}=0.02$&$M=150; U_{std}=0.02$&0.1\\\\
+					\multicolumn {1}{l}{Integrated Circuit}&\multicolumn {1}{l}{Operation Failure}&$^{d}$&$M=0.3;U_{std}=0.05$&$M=1;U_{std}=0.02$&$M=175;U_{std}=0.04$&0.1\\\\
+					\botrule
 		\end{tabular}}}
 	\end{center}
-	\footnotesize{$^{a}$ t-student distribution with $scale=20$ and $Number of Freedom (NOF)=40$, considering a confidence interval of 95\%.}\\	
-	\footnotesize{$^{b}$ Gaussian distribution.}\\	
-	\footnotesize{$^{c}$ Type A: t-student distribution with $Mean (M) = 852$, $scale= 15.8$ and $NOF= 100$; Type B: Rectangular distribution with $Mean=695$ and $Standard \hspace{2pt} Uncertainty (U_{std}) =35$.}
+	\footnotesize{$^{a}$ t-student distribution with $scale=20$, Number of Freedom $(NOF)=40$ and confidence interval of 95\%.}\\	
+	\footnotesize{$^{b}$ Rectangular distribution.}\\
+	\footnotesize{$^{c}$ Gaussian distribution.}\\	
+	\footnotesize{$^{d}$ Type A: t-student distribution with $Mean (M) = 852$, $scale= 15.8$ and $NOF= 100$.}\\
+	\footnotesize{$^{d}$ Type B: Rectangular distribution with $Mean=695$ and $Standard \hspace{2pt} Uncertainty (U_{std}) =35$.}\\
+	\footnotesize{$^{e}$ Location Parameter adopted as constant during the analysis.}
 \end{table}
 
 Regarding the application of the PCA, the results obtained with FV should be considered a basis for constructing the model. For this, they must be pre-processed. Among the pre-processing techniques, the scaling method can generate more compatible results with failure analysis para a proposed approach, given its ability to handle data with large dispersions, usually one order of magnitude higher. This pre-processing technique involves applying the centering process in the mean and subsequent processing with the scale technique.
@@ -341,7 +344,7 @@ The first result to be considered is the definition of the FT, which results fro
 	\label{fig:9}
 \end{figure}
 
-The FT presented in Fig.8 has events related to the circuit resistors (R tag), variable resistors (RV tag), and integrated circuits (U tag). Also, it has gates for adjustment failure (AdjF tag), pre-amplification circuit general failure of (PreF tag) and amplification circuit general failure (ApF tag)). Also, it has gates for adjustment failure (AdjF tag), the general flaw of the pre-amplification circuit (PreF tag) and a gate amplification circuit (ApF tag). In addition, FT presents a top event gate (FTop tag) that symbolizes the failure of the circuit, considered as the inability to maintain the fidelity of an amplified signal with pre-established characteristics. Still in relation to the FT presented, its literal form is obtained through Eq. \ref {eq: 8.1}, which indicates the failure probability by considering the failure probability of each component.
+The FT presented in Fig.8 has events related to the circuit resistors (R tag), variable resistors (RV tag) and integrated circuits (U tag). Also, it has gates for adjustment failure (AdjF tag), pre-amplification circuit general failure of (PreF tag) and amplification circuit general failure (ApF tag)). Also, it has gates for adjustment failure (AdjF tag), the general flaw of the pre-amplification circuit (PreF tag) and a gate amplification circuit (ApF tag).the FT result is presented by top event gate (FTop tag), that symbolizes the failure of the circuit. It is considered as the inability to maintain the fidelity of an amplified signal with pre-established characteristics. Still in relation to the FT presented, its literal form is obtained through Eq.\ref{eq:8.1}, which indicates the failure probability by considering the failure probability of each component. 
 
 \begin{equation} \label{eq:8.1}
 \begin{split}
@@ -366,7 +369,7 @@ Eq.\ref{eq:8.1} was processed using the MC method for an analysis time interval 
 \end{figure}
 
 Fig.\ref{fig:10} comprises a perfect bathtub curve model. Particular attention should be directed to region three. The uncertainty in this region increases exponentially and can generate failure probability values compatible with part two, which presents the probability of failures with little variation. Another interesting consideration is the behavior of the likelihood of failure in region two of Fig.\ref{fig:10}. The associated uncertainty doesn't have constant behavior, different from what is pointed out in the literature. The fact is presented in \ref{fig:11}.
-
+  
 \begin{figure} [H]
 	\centering
 	\includegraphics[width=0.75\linewidth]{"Figures/Circuit Failure Probability Regiao 2"}
@@ -375,9 +378,9 @@ Fig.\ref{fig:10} comprises a perfect bathtub curve model. Particular attention s
 	\label{fig:11}	
 \end{figure}
 
-Although region two is considered an area of constant failures, it has a variation in the probability of failure of a system or component. Even though this variation is present during the analysis, it is small compared to the other analysis regions, making it possible to consider it frequently. This approach also allows this region to be described using exponential PDF.
+Although region two is considered an area of constant failures, it has a variation in the probability of failure of a system or component. Even though this variation is present during the analysis, it is small compared to the other analysis regions, making it possible to consider it frequently. This approach also allows this region to be described using the PDF of the exponential distribution.
 
-In addition to the failure study, an in-depth analysis was carried out around the system failure components' percentage participation. This analysis was done using the FV Technique. The technique's processing was carried with MC method considering the same premisses involved in studying the system failure. Based on this, three different graphs were obtained concerning the percentage participation for the loss, where each one points to one of the components presented in Fig.\ref{fig:9}. 
+In addition to the failure study, an in-depth analysis was carried out around the system failure components' percentage participation. This analysis was done using the FV Technique. The technique's processing was carried with MC method considering the same premises involved in studying the system failure. Based on this, three different graphs were obtained concerning the percentage participation for the loss, where each one points to one of the components presented in Fig.\ref{fig:9}. 
 
 The first analysis graph for the contribution to the failure unavailability, taking into account the aging of the system and the associated uncertainties, is directed to the resistor's analysis. The graphic mentioned is shown in Fig.\ref{fig:12}. 
 
@@ -389,7 +392,7 @@ The first analysis graph for the contribution to the failure unavailability, tak
 	\label{fig:12}	
 \end{figure}
  
-Through the results obtained, the resistor is the component that least contributes to the failure of the amplification circuit.Besides, the average value of the probability of failure is not constant and has a wide variation in the region of exponential increase in failures.
+Through the results obtained, the resistor is the component that least contributes to the failure of the amplification circuit. Besides, the average value of the probability of failure is not constant and has a wide variation in the region of exponential increase in failures.
  
 In comparison with the previous graph (Fig.\ref{fig:12}), the contribution to the failure by the variable resistor does not remain constant over the analysis time. Therefore, there is a variation in the average value of contributions.
 
@@ -419,7 +422,7 @@ Regarding the exponential increase in failures, it is essential to highlight the
 
 Analysis using the FV technique can generate countless results that can be difficult to visualize graphically. Thus, PCA can present itself as an essential tool for the composition of a model that can be visualized as the information can be inserted and analyzed with the contribution of components to the system's failure.
 
-By using the values obtained with FV, with the scaling processing technique, and the application of the PCA, the contribution to the components' failure can be seen more simply. Thus, it is necessary to compose graphs pertinent to the technique, e.g., score graphs, and loadings (Fig.\ref{fig:16}).The comparison between these graphs makes it possible to determine the most remarkable correlation between components and time passages. This analysis generates results similar to those presented in the previous graphs on the contribution of components to the electronic circuit's unavailability.
+By using the values obtained with FV, with the scaling processing technique, and the application of the PCA, the contribution to the components' failure can be seen more simply. Thus, it is necessary to compose graphs pertinent to the technique, e.g., score graphs and loadings (Fig.\ref{fig:16}).The comparison between these graphs makes it possible to determine the most remarkable correlation between components and time passages. This analysis generates results similar to those presented in the previous graphs on the contribution of components to the electronic circuit's unavailability.
 
 Based on the analysis of the contribution to the system's unavailability concerning its components, components that have a more significant contribution to the system's failure generate greater uncertainties, as well as the anomaly perceived at the beginning of the exponential increase in system failure.
 
@@ -455,7 +458,7 @@ The methodology proposed in this work, refers to using high production analysis 
 
 Regarding the analyzed circuit, it was found that the variable resistor and the integrated circuit are the most sensitive components of the system, being responsible for the most outstanding contribution to the unavailability of the system. This determination points to decision-making measures that can impact the increase in the system's reliability, such as replacing them based on the circuit design or over the time of operation.
 
-The methodology for the analysis of aging throughout this paper enables the modeling, analysis of aging, and a clear presentation of a system's analysis data throughout its operation. In this way, the methodology is relevant for failure studies and presents itself as contributing to the increase in reliability and system availability guarantees.
+The methodology for the analysis of aging throughout this paper enables the modeling, analysis of aging and a clear presentation of a system's analysis data throughout its operation. In this way, the methodology is relevant for failure studies and presents itself as contributing to the increase in reliability and system availability guarantees.
 
 
 \begin{thebibliography}{0}

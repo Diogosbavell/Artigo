@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.11) (preloaded format=pdflatex 2020.12.5)  8 DEC 2020 22:44
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.11) (preloaded format=pdflatex 2020.12.5)  10 DEC 2020 20:45
 entering extended mode
 **./ws-m3as.tex
 (ws-m3as.tex
@@ -234,123 +234,116 @@ Package pdftex.def Info: Figures/BathCurve2.png  used on input line 88.
 <Figures/PCAExample2.png, id=35, 737.75626pt x 338.01282pt>
 File: Figures/PCAExample2.png Graphic file (type png)
 <use Figures/PCAExample2.png>
-Package pdftex.def Info: Figures/PCAExample2.png  used on input line 230.
-(pdftex.def)             Requested size: 252.6989pt x 115.77383pt.
+Package pdftex.def Info: Figures/PCAExample2.png  used on input line 232.
+(pdftex.def)             Requested size: 324.8978pt x 148.85503pt.
  [6]
 <Figures/Fluxograma.png, id=39, 822.07124pt x 1067.99pt>
 File: Figures/Fluxograma.png Graphic file (type png)
 <use Figures/Fluxograma.png>
-Package pdftex.def Info: Figures/Fluxograma.png  used on input line 253.
+Package pdftex.def Info: Figures/Fluxograma.png  used on input line 254.
 (pdftex.def)             Requested size: 288.8011pt x 375.18729pt.
  [7 <./Figures/PCAExample2.png>] [8 <./Figures/Fluxograma.png>]
 <Figures/SchematicPreamp.png, id=48, 2724.579pt x 1252.68pt>
 File: Figures/SchematicPreamp.png Graphic file (type png)
 <use Figures/SchematicPreamp.png>
-Package pdftex.def Info: Figures/SchematicPreamp.png  used on input line 268.
+Package pdftex.def Info: Figures/SchematicPreamp.png  used on input line 269.
 (pdftex.def)             Requested size: 324.8978pt x 149.37851pt.
 <Figures/SchematicAmp.png, id=49, 1717.617pt x 1450.218pt>
 File: Figures/SchematicAmp.png Graphic file (type png)
 <use Figures/SchematicAmp.png>
-Package pdftex.def Info: Figures/SchematicAmp.png  used on input line 277.
+Package pdftex.def Info: Figures/SchematicAmp.png  used on input line 278.
 (pdftex.def)             Requested size: 216.6022pt x 182.87006pt.
  [9 <./Figures/SchematicPreamp.png> <./Figures/SchematicAmp.png>]
 <Figures/Preamp3D2.png, id=53, 940.26282pt x 396.7322pt>
 File: Figures/Preamp3D2.png Graphic file (type png)
 <use Figures/Preamp3D2.png>
-Package pdftex.def Info: Figures/Preamp3D2.png  used on input line 288.
+Package pdftex.def Info: Figures/Preamp3D2.png  used on input line 289.
 (pdftex.def)             Requested size: 361.0pt x 152.31558pt.
 <Figures/Amp3D2.png, id=54, 785.18344pt x 323.70938pt>
 File: Figures/Amp3D2.png Graphic file (type png)
 <use Figures/Amp3D2.png>
-Package pdftex.def Info: Figures/Amp3D2.png  used on input line 297.
+Package pdftex.def Info: Figures/Amp3D2.png  used on input line 298.
 (pdftex.def)             Requested size: 361.0pt x 148.83403pt.
  [10 <./Figures/Preamp3D2.png> <./Figures/Amp3D2.png>]
 <Figures/FaultTree.png, id=58, 628.749pt x 272.217pt>
 File: Figures/FaultTree.png Graphic file (type png)
 <use Figures/FaultTree.png>
-Package pdftex.def Info: Figures/FaultTree.png  used on input line 339.
+Package pdftex.def Info: Figures/FaultTree.png  used on input line 342.
 (pdftex.def)             Requested size: 342.9489pt x 148.48615pt.
  [11]
-
-LaTeX Warning: Reference `eq: 8.1' on page 12 undefined on input line 344.
-
 <Figures/Circuit Failure Probability.png, id=63, 844.8363pt x 597.432pt>
 File: Figures/Circuit Failure Probability.png Graphic file (type png)
 <use Figures/Circuit Failure Probability.png>
 Package pdftex.def Info: Figures/Circuit Failure Probability.png  used on input
- line 362.
+ line 365.
 (pdftex.def)             Requested size: 270.75pt x 191.46474pt.
-[12 <./Figures/FaultTree.png>]
+ [12 <./Figures/FaultTree.png>]
 <Figures/Circuit Failure Probability Regiao 2.png, id=68, 844.8363pt x 597.432p
 t>
 File: Figures/Circuit Failure Probability Regiao 2.png Graphic file (type png)
 <use Figures/Circuit Failure Probability Regiao 2.png>
 Package pdftex.def Info: Figures/Circuit Failure Probability Regiao 2.png  used
- on input line 372.
+ on input line 375.
 (pdftex.def)             Requested size: 270.75pt x 191.46474pt.
  [13 <./Figures/Circuit Failure Probability.png> <./Figures/Circuit Failure Pro
 bability Regiao 2.png>]
 <Figures/RFFull.png, id=75, 844.8363pt x 549.252pt>
 File: Figures/RFFull.png Graphic file (type png)
 <use Figures/RFFull.png>
-Package pdftex.def Info: Figures/RFFull.png  used on input line 386.
+Package pdftex.def Info: Figures/RFFull.png  used on input line 389.
 (pdftex.def)             Requested size: 288.8011pt x 187.7573pt.
 <Figures/RVFull.png, id=76, 844.8363pt x 576.4737pt>
 File: Figures/RVFull.png Graphic file (type png)
 <use Figures/RVFull.png>
-Package pdftex.def Info: Figures/RVFull.png  used on input line 400.
+Package pdftex.def Info: Figures/RVFull.png  used on input line 403.
 (pdftex.def)             Requested size: 288.8011pt x 197.0628pt.
  [14 <./Figures/RFFull.png>]
 <Figures/ICFull.png, id=81, 844.8363pt x 578.4009pt>
 File: Figures/ICFull.png Graphic file (type png)
 <use Figures/ICFull.png>
-Package pdftex.def Info: Figures/ICFull.png  used on input line 410.
+Package pdftex.def Info: Figures/ICFull.png  used on input line 413.
 (pdftex.def)             Requested size: 288.8011pt x 197.7216pt.
  [15 <./Figures/RVFull.png> <./Figures/ICFull.png>]
 <Figures/ScorexLoadings.png, id=87, 602.25pt x 277.63725pt>
 File: Figures/ScorexLoadings.png Graphic file (type png)
 <use Figures/ScorexLoadings.png>
-Package pdftex.def Info: Figures/ScorexLoadings.png  used on input line 428.
+Package pdftex.def Info: Figures/ScorexLoadings.png  used on input line 431.
 (pdftex.def)             Requested size: 361.0pt x 166.42688pt.
 <Figures/FVDendogram.png, id=88, 360.74776pt x 295.1025pt>
 File: Figures/FVDendogram.png Graphic file (type png)
 <use Figures/FVDendogram.png>
-Package pdftex.def Info: Figures/FVDendogram.png  used on input line 438.
+Package pdftex.def Info: Figures/FVDendogram.png  used on input line 441.
 (pdftex.def)             Requested size: 361.0pt x 295.3314pt.
- [16 <./Figures/ScorexLoadings.png>] [17 <./Figures/FVDendogram.png>] [18] [19]
- (ws-m3as.aux)
-
-LaTeX Warning: There were undefined references.
-
- ) 
+ [16 <./Figures/ScorexLoadings.png>]
+[17 <./Figures/FVDendogram.png>] [18] [19] (ws-m3as.aux) ) 
 Here is how much of TeX's memory you used:
- 2900 strings out of 479799
- 40162 string characters out of 2869723
+ 2899 strings out of 479799
+ 40153 string characters out of 2869723
  313844 words of memory out of 3000000
- 19849 multiletter control sequences out of 15000+200000
+ 19848 multiletter control sequences out of 15000+200000
  553712 words of font info for 67 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 80i,15n,85p,1217b,449s stack positions out of 5000i,500n,10000p,200000b,50000s
-{C:/Users/diogo/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc}<C:
-/Users/diogo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex1
-0.pfb><C:/Users/diogo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts
-/cm/cmmi10.pfb><C:/Users/diogo/AppData/Local/Programs/MiKTeX/fonts/type1/public
-/amsfonts/cm/cmmi6.pfb><C:/Users/diogo/AppData/Local/Programs/MiKTeX/fonts/type
-1/public/amsfonts/cm/cmmi7.pfb><C:/Users/diogo/AppData/Local/Programs/MiKTeX/fo
-nts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/diogo/AppData/Local/Programs/M
-iKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/diogo/AppData/Local/Pr
-ograms/MiKTeX/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Users/diogo/AppData/L
-ocal/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/diogo/Ap
-pData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/d
-iogo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C
-:/Users/diogo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy
-6.pfb><C:/Users/diogo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts
-/cm/cmsy7.pfb><C:/Users/diogo/AppData/Local/Programs/MiKTeX/fonts/type1/urw/tim
-es/utmb8a.pfb><C:/Users/diogo/AppData/Local/Programs/MiKTeX/fonts/type1/urw/tim
-es/utmbi8a.pfb><C:/Users/diogo/AppData/Local/Programs/MiKTeX/fonts/type1/urw/ti
-mes/utmr8a.pfb><C:/Users/diogo/AppData/Local/Programs/MiKTeX/fonts/type1/urw/ti
-mes/utmri8a.pfb>
-Output written on ws-m3as.pdf (19 pages, 1186656 bytes).
+ 80i,15n,85p,1209b,449s stack positions out of 5000i,500n,10000p,200000b,50000s
+{C:/Users/diogo/AppDa
+ta/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc}<C:/Users/diogo/AppData/Lo
+cal/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/diogo/A
+ppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/User
+s/diogo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi6.pfb>
+<C:/Users/diogo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cm
+mi7.pfb><C:/Users/diogo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfon
+ts/cm/cmmi8.pfb><C:/Users/diogo/AppData/Local/Programs/MiKTeX/fonts/type1/publi
+c/amsfonts/cm/cmr10.pfb><C:/Users/diogo/AppData/Local/Programs/MiKTeX/fonts/typ
+e1/public/amsfonts/cm/cmr6.pfb><C:/Users/diogo/AppData/Local/Programs/MiKTeX/fo
+nts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/diogo/AppData/Local/Programs/Mi
+KTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/diogo/AppData/Local/Prog
+rams/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/diogo/AppData/L
+ocal/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy6.pfb><C:/Users/diogo/A
+ppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Users
+/diogo/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmb8a.pfb><C:/Users
+/diogo/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmbi8a.pfb><C:/User
+s/diogo/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmr8a.pfb><C:/User
+s/diogo/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmri8a.pfb>
+Output written on ws-m3as.pdf (19 pages, 1223732 bytes).
 PDF statistics:
  154 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
